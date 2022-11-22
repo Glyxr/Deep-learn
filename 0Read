@@ -7,3 +7,8 @@
   （3）暂退法将活性值h替换为具有期望值的随机变量h_pred。
   （4）暂退法仅在训练期间使用。
 3.dropout有什么作用？An:增强模型的平滑性
+4.8
+梯度爆炸：参数更新过大，破坏了模型的稳定收敛
+梯度消失：参数更新过小，在每次更新时几乎不会移动，导致模型无法学习
+y.backward(torch.ones_like(x))：https://blog.csdn.net/sinat_28731575/article/details/90342082
+Distill：https://distill.pub/

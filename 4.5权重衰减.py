@@ -34,7 +34,7 @@ def train(lambd):
         for X, y in train_iter:
             # 增加了L2范数惩罚项，
             # 广播机制使l2_penalty(w)成为一个长度为batch_size的向量
-            l = loss(net(X), y) + lambd * l1_penalty(w)
+            l = loss(net(X), y) + lambd * l2_penalty(w)
             l.sum().backward()
             d2l.sgd([w, b], lr, batch_size)
         if (epoch + 1) % 5 == 0:
