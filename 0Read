@@ -12,3 +12,24 @@
 梯度消失：参数更新过小，在每次更新时几乎不会移动，导致模型无法学习
 y.backward(torch.ones_like(x))：https://blog.csdn.net/sinat_28731575/article/details/90342082
 Distill：https://distill.pub/
+
+4.10
+#@save的意思应该是指：虽然书中对这些定义的函数展开讲解，但这些函数都是可以直接调用
+封装在d2l库中的，此外也和没有封装的，临时定义的函数做出区分.
+4.10.3
+DataFrame:DataFrame是python中Pandas库中的一种数据结构，类似excel，是一种二维表。
+          DataFrame的单元格可以存放数值，字符串等类型数据。python在处理excel数据时通常都会用DataFrame来读。
+          可以和list进行转化
+          https://blog.csdn.net/m0_60392490/article/details/121184960
+iolc:iloc[ : , : ] 行列切片以“，”隔开，前面的冒号就是取行数，后面的冒号是取列数,索引为左闭右开，用于DataFrame
+在pandas类似于数组的数据结构是DataFrame,
+DataFrame的object类型:https://blog.csdn.net/qq_36151472/article/details/110167386
+DataFrame的apply函数:https://blog.csdn.net/weixin_44852067/article/details/122364306
+DataFrame的fillna函数
+pd.get_dummies:独热编码，https://blog.csdn.net/qq_43404784/article/details/89486442
+4.10.5
+clamp():将输入input张量每个元素的夹紧到区间 [min,max][min,max]，并返回结果到一个新张量。
+Adam优化算法:
+4.10.6
+K折交叉验证:适用于训练数据稀缺，无法提供足够的数据来构成一个合适的验证集,有助与模型选择和超参数调整
+slice()函数:返回一个slice对象，该对象代表由range（start，stop，step）指定的一组索引。
